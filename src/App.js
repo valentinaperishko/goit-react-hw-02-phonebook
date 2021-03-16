@@ -79,9 +79,10 @@ export default class App extends Component {
     return (
       <>
         <div className={styles.container}>
-          <h1 className="titlePhonebook">Phonebook</h1>
+          <h1>Phonebook</h1>
           <ContactForm addContact={this.addContact} />
-          <h2 className="title">Contacts</h2>
+          <hr></hr>
+          <h2>Contacts</h2>
           <Filter filter={this.state.filter} handleChange={this.handleChange} />
           <ContactList
             visibleContacts={visibleContacts}
